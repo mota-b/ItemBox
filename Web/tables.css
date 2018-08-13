@@ -1,0 +1,6 @@
+.row div:nth-child(2n+1){
+    background: #ecf0f1;
+}
+.row div:nth-child(2n){
+    background: #bdc3c7;
+}
