@@ -1,0 +1,76 @@
+@import slidebars.css
+
+[class*=js-] 
+    cursor: pointer
+
+
+=li-bar
+    &.selected, &.matched, &:hover
+        background-color: #495e7f
+    cursor: pointer
+    padding: 10px 0px 10px 0px
+    border-top: 1px solid rgba(69, 74, 84, 0.7)
+    border-bottom: 1px solid rgba(69, 74, 84, 0.7) 
+    list-style: none
+    a
+        display: block
+        color: #888
+        height: 100%
+        width: 100% !important
+
+
+#icon-bar
+    width: 42px
+    height: 100vh
+    float: left
+    position: fixed!important 
+    top: 0!important 
+    left:  0!important 
+    z-index: 10000!important 
+    background-color: #303641
+    center
+        #icon-list 
+            li
+                
+                &#menu-icon
+                    border: 0px !important
+                    margin-bottom: 50px
+                    background-color: #495e7f
+                    display:  block !important
+                    span
+                        i
+                            transform: rotate(-90deg)
+                            transition: transform 300ms
+                display: none
+                background-color: #303641
+                +li-bar
+
+#navbar 
+    padding-left: 42px
+    background-color: #303641
+    #nav-list 
+        margin-top: 90px
+        li 
+            +li-bar
+        
+            
+
+
+
+
+#main-content
+    padding-left: 42px
+    background-color: #384969
+    color: white
+    overflow-x: hidden
+    h1
+        text-align: center
+    p 
+        padding: 12px
+        background-color: white
+        color: grey
+        font-size: 20px
+        height: 245px
+        border-radius: 10%
+        box-shadow: 0px 8px #807878
+    

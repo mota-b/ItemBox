@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+         <!-- Bootstrap css -->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        
+         <!-- Simple css -->
+         <link href="./simple.css" rel="stylesheet">
+ 
+         <!-- Slidebar css -->
+         <link rel="stylesheet" href="./slidebars.css">
+
+         <!-- index css -->
+         <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+        
+            <div off-canvas="id-1 left reveal">
+                <ul>
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                    <li>d</li>
+                </ul>
+                </div>
+        
+        <div id="main" canvas="container" >
+            
+            <section id="hero">
+              <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+                    <button class=".toggle-id-1">click</button>
+              
+                <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Profile</a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+            </section>
+            
+            
+           <!-- <section id="Services" >
+               
+           </section> -->
+  <!--
+          <section id="Offers">
+            
+          </section>
+  
+          <section id="Aboute">
+            
+          </section>
+  
+          <section id="Contacte">
+            
+          </section> -->
+        </div>
+        
+        <!-- <div id="footer">
+
+        </div> -->
+        
+        <!-- Jquery js  -->
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        <!-- Bootstrap js -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <!-- SlideBar -->
+        <script src="./slidebars.js"></script>
+        <script>
+            ( function ( $ ) {
+  // Initialize Slidebars
+  var controller = new slidebars();
+  controller.init();
+   // Toggle Slidebars
+   $( '.toggle-id-1' ).on( 'click', function ( event ) {
+          // Stop default action and bubbling
+          event.stopPropagation();
+          event.preventDefault();
+
+          // Toggle the Slidebar with id 'id-1'
+          controller.toggle( 'id-1' );
+        } );
+
+} ) ( jQuery );
+        </script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+@import url(slidebars.css);
+[class*=js-] {
+  cursor: pointer; }
+
+#icon-bar {
+  width: 42px;
+  height: 100vh;
+  float: left;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 10000 !important;
+  background-color: #303641; }
+  #icon-bar center #icon-list li {
+    display: none;
+    background-color: #303641;
+    cursor: pointer;
+    padding: 10px 0px 10px 0px;
+    border-top: 1px solid rgba(69, 74, 84, 0.7);
+    border-bottom: 1px solid rgba(69, 74, 84, 0.7);
+    list-style: none; }
+    #icon-bar center #icon-list li#menu-icon {
+      border: 0px !important;
+      margin-bottom: 50px;
+      background-color: #495e7f;
+      display: block !important; }
+      #icon-bar center #icon-list li#menu-icon span i {
+        transform: rotate(-90deg);
+        transition: transform 300ms; }
+    #icon-bar center #icon-list li.selected, #icon-bar center #icon-list li.matched, #icon-bar center #icon-list li:hover {
+      background-color: #495e7f; }
+    #icon-bar center #icon-list li a {
+      display: block;
+      color: #888;
+      height: 100%;
+      width: 100% !important; }
+
+#navbar {
+  padding-left: 42px;
+  background-color: #303641; }
+  #navbar #nav-list {
+    margin-top: 90px; }
+    #navbar #nav-list li {
+      cursor: pointer;
+      padding: 10px 0px 10px 0px;
+      border-top: 1px solid rgba(69, 74, 84, 0.7);
+      border-bottom: 1px solid rgba(69, 74, 84, 0.7);
+      list-style: none; }
+      #navbar #nav-list li.selected, #navbar #nav-list li.matched, #navbar #nav-list li:hover {
+        background-color: #495e7f; }
+      #navbar #nav-list li a {
+        display: block;
+        color: #888;
+        height: 100%;
+        width: 100% !important; }
+
+#main-content {
+  padding-left: 42px;
+  background-color: #384969;
+  color: white;
+  overflow-x: hidden; }
+  #main-content h1 {
+    text-align: center; }
+  #main-content p {
+    padding: 12px;
+    background-color: white;
+    color: grey;
+    font-size: 20px;
+    height: 245px;
+    border-radius: 10%;
+    box-shadow: 0px 8px #807878; }
+
+/*# sourceMappingURL=def_custom_slidebar.css.map */
